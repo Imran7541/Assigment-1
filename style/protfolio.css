@@ -1,0 +1,25 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  
+}
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+header{
+  background-color:#de3535 ;
+}
+.boss{
+    display: flex;
+    justify-content:space-between;
+}
+
+.icon img{
+  
+}
+  
+
+    
+
