@@ -118,8 +118,8 @@ nav .nav-ul {
 /* Main section */
 
 /* Hero section */
-#hero-parent {
-    display: flex;
+#section-parent {
+    /* display: flex;
     justify-content: center;
     padding: 120px 0 150px;
     background-image: url(./assets/hero-bg.png);
@@ -127,16 +127,27 @@ nav .nav-ul {
     background-position: center;
     background-size: cover;
     align-items: center;
-    text-align: center;
-}
-
-.hero-banner {
-    max-width: 770px;
+    text-align: center; */
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    text-align: center;
+    background-image: url(./assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
+#banner {
+     
+    display: flex;
+    max-width:100%;
+    padding:-37px -164px -652px -278px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+} 
 
 .btn-flex {
     display: inline-block;
@@ -150,7 +161,7 @@ nav .nav-ul {
     margin-left: 6px;
 }
 
-.hero-banner h1 {
+.banner h1 {
     font-style: Bold;
     font-size: 72px;
     line-height: 84px;
@@ -160,12 +171,14 @@ nav .nav-ul {
     text-transform: capitalize;
 }
 
-.hero-banner .green {
+.banner .green {
     color: #30B868;
     text-align: center;
 }
 
-.hero-banner p {
+
+
+.section-banner p {
     color: rgba(255, 255, 255, 1);
     font-size: 18px;
     font-weight: 400;
@@ -175,7 +188,7 @@ nav .nav-ul {
     font-family: Inter;
 }
 
-.hero-early-access {
+.section-early-access {
     margin-bottom: 16px;
     display: flex;
     justify-content: center;
@@ -189,12 +202,22 @@ nav .nav-ul {
     outline: none;
 }
 
-.hero-button-group {
+.section-button-group {
     margin-top: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
+}
+#banner.top{
+    
+    padding:8px 12px 8px 12px;
+    border-radius:12px;
+    font-size:16px;
+    color:rgba(48, 184, 104, 1);
+    text-align:center;
+    
+
 }
 
 .hero-btn-primary {
@@ -210,8 +233,8 @@ nav .nav-ul {
     outline: none;
 }
 
-.hero-btn-primary span,
-.hero-btn-outlined span {
+.section-btn-primary span,
+.section-btn-outlined span {
     color: rgba(255, 255, 255, 1);
     font-size: 16px;
     font-weight: 600;
@@ -219,7 +242,7 @@ nav .nav-ul {
     font-family: 'Inter';
 }
 
-.hero-btn-outlined {
+.section-btn-outlined {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -344,7 +367,10 @@ nav .nav-ul {
 }
 
 .second-brain .check-img {
-    margin-right: 6px;
+    /* margin-right: 6px; */
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
 
 
@@ -428,6 +454,7 @@ text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #FFFFFF;
  }
 
  .footer-social{
